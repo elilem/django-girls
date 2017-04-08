@@ -1,0 +1,69 @@
+
+<html>
+<script>
+var bascule= 0;
+var size = 10;
+function minette () {
+var x = document.getElementById("minette") ;
+// couleur départ= "blue";
+//console.log("Lukaté%s", x.innerHTML);
+if (bascule==0){
+bascule=1;
+couleur= "black";
+x.style.color = couleur;
+x.innerHTML="Bye bye";
+}
+else {
+bascule=0;
+couleur = "blue";
+x.style.color = couleur;
+x.innerHTML="Hello";}
+x.style.fontSize = size;
+size = size+10;
+}
+var text;
+function minetteout (){
+var x = document.getElementById("Hello") ;
+text= x.innerHTML;
+x.innerHTML= "Hello";
+}
+
+function ajoutmama () {
+var list= document.getElementById("l") ;
+var entry = document.createElement('li');
+entry.appendChild(document.createTextNode("Django girls"));
+list.appendChild(entry);
+
+
+}
+</script>
+
+<body>
+  <p id="minette" onmouseover="minette ()" onmouseout="minetteout ()">
+    <font color="green" size="20">
+ Hello
+</font>
+</p>
+<p>
+<font color="pink" size="5">
+Bye bye!
+</font>
+</p>
+<p id="feministe" onmouseover="ajoutmama ()">
+<font color="blue" size="50">
+Django girls
+</font>
+</p>
+<ul id="l">
+<li>
+  <font color= "blue" size="20">
+it is
+</li>
+<li>
+<font color= "brown" size="20">
+great!
+</font>
+</li>
+</ul>
+</body>
+</html>
