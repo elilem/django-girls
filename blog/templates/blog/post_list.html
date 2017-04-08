@@ -44,6 +44,7 @@ list.appendChild(entry);
  Hello
 </font>
 </p>
+
 <div>
   <p>published: 0/8.04.2017, 14:44</p>
   <h1> <a href="">My first post</a></h1>
@@ -55,6 +56,16 @@ list.appendChild(entry);
   <br />
   <p> Comme la nuit se fait lorsque le jour s en va. </p>
 </div>
+
+{% for post in posts %}
+    <div>
+        <p>publié: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+
   <br />
   <br />
   <br />
