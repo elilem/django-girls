@@ -9,13 +9,13 @@ var x = document.getElementById("minette") ;
 //console.log("Lukaté%s", x.innerHTML);
 if (bascule==0){
 bascule=1;
-couleur= "black";
+couleur= "pink";
 x.style.color = couleur;
 x.innerHTML="Bye bye";
 }
 else {
 bascule=0;
-couleur = "blue";
+couleur = "green";
 x.style.color = couleur;
 x.innerHTML="Hello";}
 x.style.fontSize = size;
@@ -28,7 +28,7 @@ text= x.innerHTML;
 x.innerHTML= "Hello";
 }
 
-function ajoutmama () {
+function ajoutgirls () {
 var list= document.getElementById("l") ;
 var entry = document.createElement('li');
 entry.appendChild(document.createTextNode("Django girls"));
@@ -44,13 +44,22 @@ list.appendChild(entry);
  Hello
 </font>
 </p>
-<p>
-<font color="pink" size="5">
-Bye bye!
-</font>
-</p>
-<p id="feministe" onmouseover="ajoutmama ()">
-<font color="blue" size="50">
+<div>
+  <p>published: 0/8.04.2017, 14:44</p>
+  <h1> <a href="">My first post</a></h1>
+  <p> Il dort, quoique le sort fut pour lui bien etrange, </p>
+  <br />
+  <p> Il vivait, il mourut quand il n eut plus son ange, </p>
+  <br />
+  <p> La chose simplement d elle meme arriva <p/>
+  <br />
+  <p> Comme la nuit se fait lorsque le jour s en va. </p>
+</div>
+  <br />
+  <br />
+  <br />
+<p id="girls" onmouseover="ajoutgirls ()">
+<font color="claret" size="20">
 Django girls
 </font>
 </p>
@@ -60,10 +69,18 @@ Django girls
 it is
 </li>
 <li>
-<font color= "brown" size="20">
+<font color= "turquoise" size="20">
 great!
 </font>
 </li>
 </ul>
 </body>
 </html>
+
+
+
+<p>
+<font color="orange" size="25">
+Bye bye!
+</font>
+</p>
